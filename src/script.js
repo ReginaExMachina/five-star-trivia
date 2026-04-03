@@ -1,11 +1,10 @@
 let questionsDB = [];
 
-// This MUST be async to wait for the file to load
 async function loadQuestions() {
     try {
         const response = await fetch('questions.json');
         const data = await response.json();
-        // Filter out the _comment objects so they don't break the game logic
+
         questionsDB = data.filter(item => item.q);
         console.log("Questions loaded:", questionsDB.length);
     } catch (error) {

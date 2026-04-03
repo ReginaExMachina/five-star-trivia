@@ -1,5 +1,9 @@
-# [FIVE STAR TRIVIA]
-### *OFFICIAL GAME MANUAL (A014)*
+This revised layout keeps every word of your text intact while weaving in the emojis and the "quest" phrase to match that classic game manual energy.
+
+***
+
+# 🎬 [FIVE STAR TRIVIA]
+### *OFFICIAL GAME MANUAL (RD26)*
 
      --------------------------------------------------
     |   [   ]  [   ]  [   ]  [   ]  [   ]  [   ]  [   ]  |
@@ -15,22 +19,22 @@
      --------------------------------------------------
 
      ****************************************************
-     * -> [ CLICK HERE TO PLAY ] <-           *
-     * [https://ReginaExMachina.itch.io/FiveStar]  *
-     * (Note: Browser link active June 2026)      *
+     * 🕹️ -> [ CLICK HERE TO PLAY ] <- 🎮           *
+     * [[https://ReginaExMachina.itch.io/FiveStar](https://ReginaExMachina.itch.io/FiveStar)]      *
+     * (Note: Browser link active June 2026)          *
      ****************************************************
 
 ---
 
-## [I. OPERATOR'S INTRODUCTION]
+## [I. OPERATOR'S INTRODUCTION] ✨
 
 **FIVE STAR TRIVIA** is an arcade-inspired challenge for film students and casual moviegoers alike. We have optimized this interface for maximum nostalgic output, using 8-bit styling and high-contrast visuals.
 
-Your mission, should you choose to accept it, is simple: Navigate a century of film history, maintain your streak, and earn a perfect **5-Star Rating** from the elusive "Critic’s Circle" (the Game Engine).
+Your mission, should you choose to accept it, is simple: Navigate a century of film history, maintain your streak, and embark on **the quest for a perfect 5-star rating** from the elusive "Critic’s Circle" (the Game Engine).
 
 ---
 
-## [II. GAME MODES & CONFIGURATION]
+## [II. GAME MODES & CONFIGURATION] 🎮
 
 *Attention: Use the left-hand menu to configure your experience before starting the round.*
 
@@ -48,7 +52,7 @@ Your mission, should you choose to accept it, is simple: Navigate a century of f
 
 ---
 
-## [III. DIFFICULTY CALIBRATION]
+## [III. DIFFICULTY CALIBRATION] 🎬
 
 Choose your level of expert analysis. If your choice has fewer than 5 valid questions, the Game Engine will backfill (automatically fill) from the wider question pool.
 
@@ -61,7 +65,7 @@ Choose your level of expert analysis. If your choice has fewer than 5 valid ques
 
 ---
 
-## [IV. CONTROLS & OBJECTIVE]
+## [IV. CONTROLS & OBJECTIVE] 🕹️
 
 [START] LIGHTS, CAMERA, ACTION!
         Press to begin your round of 5 questions.
@@ -77,7 +81,7 @@ Achieve a **5-Star Score** (5 correct answers) in your chosen configuration. Mai
 
 ---
 
-## [V. TECH SPECS & DISCLAIMER]
+## [V. TECH SPECS & DISCLAIMER] ✨
 
 * **Platform:** Universal (Web Browser)
 * **Aesthetic:** 8-bit Arcade UI

@@ -153,3 +153,53 @@
             margin-bottom: 30px;
             letter-spacing: 6px;
         }
+    /* --- MOBILE RESPONSIVENESS --- */
+    @media (max-width: 768px) {
+        body {
+            flex-direction: column;
+            height: auto;
+        }
+
+    #side-menu {
+        width: 100%;
+        border-right: none;
+        border-bottom: var(--pixel-border) solid #444;
+        padding: 15px;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .menu-section {
+        margin-bottom: 0;
+    }
+
+    .label {
+        font-size: 6px;
+    }
+
+    .toggle-btn {
+        padding: 8px 5px;
+        font-size: 8px;
+    }
+
+    #game-container {
+        padding: 20px;
+        min-height: 400px;
+    }
+
+    #game-title {
+        font-size: 24px;
+    }
+
+    #question-text {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+
+    .option {
+        padding: 12px;
+        font-size: 9px;
+        margin: 8px 0;
+    }
+}

@@ -109,5 +109,86 @@
   { "q": "Who plays the character 'Jack Sparrow' in Pirates of the Caribbean?", "a": ["Johnny Depp", "Orlando Bloom", "Jude Law"], "c": 0, "d": "Easy", "e": "Modern", "r": "Domestic" },
   { "q": "Which 2013 Disney film features the song 'Let It Go'?", "a": ["Frozen", "Moana", "Tangled"], "c": 0, "d": "Easy", "e": "Modern", "r": "Domestic" },
   { "q": "In 'Inception', what object does Cobb use as his totem?", "a": ["A spinning top", "A die", "A coin"], "c": 0, "d": "Easy", "e": "Modern", "r": "Domestic" },
-  { "q": "Which 2016 musical stars Ryan Gosling and Emma Stone?", "a": ["La La Land", "The Greatest Showman", "Cats"], "c": 0, "d": "Easy", "e": "Modern", "r": "Domestic" }
+  { "q": "Which 2016 musical stars Ryan Gosling and Emma Stone?", "a": ["La La Land", "The Greatest Showman", "Cats"], "c": 0, "d": "Easy", "e": "Modern", "r": "Domestic" },
+
+  { "q": "Which 1994 film stars Jim Carrey as a bank clerk who finds a magical mask?", "a": ["The Mask", "Ace Ventura", "Dumb and Dumber"], "c": 0, "d": "Easy", "e": "90s", "r": "Domestic" },
+  { "q": "In the 1990 film 'Home Alone', where is Kevin's family traveling to?", "a": ["Paris", "London", "New York"], "c": 0, "d": "Easy", "e": "90s", "r": "Domestic" },
+  { "q": "Which 1996 film features the line, 'Show me the money!'?", "a": ["Jerry Maguire", "A Few Good Men", "Top Gun"], "c": 0, "d": "Easy", "e": "90s", "r": "Domestic" },
+  { "q": "Who directed the 1997 film 'Titanic'?", "a": ["James Cameron", "Steven Spielberg", "Ridley Scott"], "c": 0, "d": "Easy", "e": "90s", "r": "Domestic" },
+
+  { "q": "In 'The Breakfast Club', how many students are in Saturday detention?", "a": ["5", "6", "4"], "c": 0, "d": "Medium", "e": "80s", "r": "Domestic" },
+  { "q": "Which 1984 film features a karate student named Daniel LaRusso?", "a": ["The Karate Kid", "Rocky", "Bloodsport"], "c": 0, "d": "Easy", "e": "80s", "r": "Domestic" },
+  { "q": "Who played the lead role in the 1982 film 'Blade Runner'?", "a": ["Harrison Ford", "Mel Gibson", "Kurt Russell"], "c": 0, "d": "Easy", "e": "80s", "r": "Domestic" },
+  { "q": "In 'Ferris Bueller's Day Off', what is the name of Ferris's best friend?", "a": ["Cameron", "Sloane", "Rooney"], "c": 0, "d": "Easy", "e": "80s", "r": "Domestic" },
+
+  { "q": "Which 1988 Studio Ghibli film features a large, friendly forest spirit?", "a": ["My Neighbor Totoro", "Grave of the Fireflies", "Castle in the Sky"], "c": 0, "d": "Easy", "e": "80s", "r": "International" },
+  { "q": "Which 1982 film follows a submarine crew during WWII and is one of Germany's most famous exports?", "a": ["Das Boot", "Stroszek", "Wings of Desire"], "c": 0, "d": "Easy", "e": "80s", "r": "International" },
+  { "q": "Which 1988 Italian film is a love letter to cinema, following a boy and a projectionist?", "a": ["Cinema Paradiso", "Life is Beautiful", "The Postman"], "c": 0, "d": "Easy", "e": "80s", "r": "International" },
+
+  { "q": "Which 1997 Italian film stars Roberto Benigni as a father protecting his son in a camp?", "a": ["Life is Beautiful", "The Tiger and the Snow", "Cinema Paradiso"], "c": 0, "d": "Easy", "e": "90s", "r": "International" },
+  { "q": "Which 1998 German film features a woman sprinting through Berlin to save her boyfriend?", "a": ["Run Lola Run", "The Experiment", "Goodbye Lenin!"], "c": 0, "d": "Easy", "e": "90s", "r": "International" },
+  { "q": "Jackie Chan stars in which 1994 Hong Kong martial arts classic?", "a": ["Drunken Master II", "Police Story", "Hard Boiled"], "c": 0, "d": "Easy", "e": "90s", "r": "International" },
+  { "q": "Which 1992 film features a Mexican family and the magical effects of cooking?", "a": ["Like Water for Chocolate", "Amores Perros", "Cronos"], "c": 0, "d": "Easy", "e": "90s", "r": "International" },
+
+  { "q": "The 1948 film 'Bicycle Thieves' is a famous example of which Italian film movement?", "a": ["Neorealism", "Expressionism", "Surrealism"], "c": 0, "d": "Easy", "e": "Golden Age", "r": "International" },
+  { "q": "Which 1959 French New Wave film follows a rebellious young boy named Antoine Doinel?", "a": ["The 400 Blows", "Breathless", "Hiroshima Mon Amour"], "c": 0, "d": "Medium", "e": "Golden Age", "r": "International" },
+
+  { "q": "Which 1979 Australian film stars Mel Gibson as a highway patrolman in a collapsing society?", "a": ["Mad Max", "Gallipoli", "The Cars That Ate Paris"], "c": 0, "d": "Easy", "e": "New Hollywood", "r": "International" },
+  { "q": "Which 1966 'Spaghetti Western' stars Clint Eastwood and features a famous three-way duel?", "a": ["The Good, the Bad and the Ugly", "A Fistful of Dollars", "Django"], "c": 0, "d": "Easy", "e": "New Hollywood", "r": "International" },
+
+  { "q": "Which silent film icon was known as 'The Latin Lover'?", "a": ["Rudolph Valentino", "Douglas Fairbanks", "Ramon Novarro"], "c": 0, "d": "Easy", "e": "Silent Era", "r": "Domestic" },
+  { "q": "Which 1921 Charlie Chaplin film made Jackie Coogan a child star?", "a": ["The Kid", "The Circus", "City Lights"], "c": 0, "d": "Easy", "e": "Silent Era", "r": "Domestic" },
+  { "q": "The 1925 epic 'Ben-Hur' was famous for which thrilling sequence?", "a": ["A Chariot Race", "A Sea Battle", "A Mountain Climb"], "c": 0, "d": "Easy", "e": "Silent Era", "r": "Domestic" },
+  { "q": "In the 1950 film 'Sunset Blvd.', which real-life silent star plays Norma Desmond?", "a": ["Gloria Swanson", "Mary Pickford", "Greta Garbo"], "c": 0, "d": "Easy", "e": "Silent Era", "r": "Domestic" },
+
+  { "q": "In 'The Wizard of Oz' (1939), which actor was originally cast as the Tin Man before suffering a near-fatal allergic reaction to the aluminum makeup?", "a": ["Buddy Ebsen", "Ray Bolger", "Jack Haley"], "c": 0, "d": "Director Cut", "e": "Golden Age", "r": "Domestic" },
+  { "q": "Which 1970s conspiracy thriller was the first major motion picture to use the 'Panaglide' (a competitor to the Steadicam)?", "a": ["Bound for Glory", "Halloween", "The Parallax View"], "c": 0, "d": "Director Cut", "e": "New Hollywood", "r": "Domestic" },
+  { "q": "In 'Eyes Wide Shut', what is the name of the costume shop where Bill Harford rents his mask and cloak?", "a": ["Rainbow Fashions", "Gillespie's", "Somerton"], "c": 0, "d": "Director Cut", "e": "90s", "r": "Domestic" },
+  { "q": "Which film holds the record for the most retakes of a single scene, totaling 148 takes for a simple dialogue sequence?", "a": ["The Shining", "Dragon Lord", "City Lights"], "c": 0, "d": "Director Cut", "e": "80s", "r": "Domestic" },
+  { "q": "What was the specific technical reason 'The Revenant' (2015) faced massive production delays?", "a": ["Shooting only in natural light", "Melting snow in Canada", "IMAX camera failure"], "c": 1, "d": "Director Cut", "e": "Modern", "r": "Domestic" },
+
+  { "q": "How many separate hand-painted frames were required to create the 1902 masterpiece 'A Trip to the Moon' in its original color version?", "a": ["13,375", "8,500", "22,000"], "c": 0, "d": "Director Cut", "e": "Silent Era", "r": "International" },
+  { "q": "Which legendary cinematographer shot Tarkovsky's 'Stalker' and later claimed the film's toxic locations led to the premature deaths of the crew?", "a": ["Alexander Knyazhinsky", "Vadim Yusov", "Georgi Rerberg"], "c": 0, "d": "Director Cut", "e": "New Hollywood", "r": "International" },
+  { "0": "Bela Tarr's 'Sátántangó' contains only how many individual shots across its 432-minute runtime?", "a": ["150", "285", "75"], "c": 0, "d": "Director Cut", "e": "90s", "r": "International" },
+  { "q": "Which 1920s German Expressionist masterpiece used 'forced perspective' painted sets because the studio budget was too low for electricity to power high-key lighting?", "a": ["The Cabinet of Dr. Caligari", "Metropolis", "The Last Laugh"], "c": 0, "d": "Director Cut", "e": "Silent Era", "r": "International" },
+  { "q": "In Kurosawa's 'Ran', which specific castle was actually burned to the ground for the third act's climax because the director felt miniatures looked 'fake'?", "a": ["The Third Castle", "Himeji Castle", "Edo Castle"], "c": 0, "d": "Director Cut", "e": "80s", "r": "International" },
+
+  { "q": "Which French filmmaker is often cited as the first woman director and the first person to ever tell a fictional story on film?", "a": ["Alice Guy-Blaché", "Agnès Varda", "Germaine Dulac"], "c": 0, "d": "Hard", "e": "Silent Era", "r": "International" },
+  { "q": "In 1977, who became the first woman ever nominated for the Academy Award for Best Director?", "a": ["Lina Wertmüller", "Jane Campion", "Sofia Coppola"], "c": 0, "d": "Hard", "e": "New Hollywood", "r": "International" },
+  { "q": "Which screenwriter was the highest-paid writer in Hollywood during the silent era and won two Oscars for 'The Big House' and 'The Champ'?", "a": ["Frances Marion", "June Mathis", "Lenore Coffee"], "c": 0, "d": "Director Cut", "e": "Silent Era", "r": "Domestic" },
+  { "q": "Who directed the 2023 film 'Past Lives', exploring the concept of In-Yun?", "a": ["Celine Song", "Chloe Zhao", "Lulu Wang"], "c": 0, "d": "Medium", "e": "Modern", "r": "International" },
+  { "q": "Which legendary actress holds the record for the most Academy Award nominations for acting, totaling 21?", "a": ["Meryl Streep", "Katharine Hepburn", "Bette Davis"], "c": 0, "d": "Easy", "e": "Modern", "r": "Domestic" },
+  { "q": "Agnès Varda was a central figure in which influential cinematic movement?", "a": ["French New Wave", "Italian Neorealism", "German Expressionism"], "c": 0, "d": "Medium", "e": "Golden Age", "r": "International" },
+  { "q": "Which screenwriter and director is famous for 'When Harry Met Sally' and 'Sleepless in Seattle'?", "a": ["Nora Ephron", "Nancy Meyers", "Greta Gerwig"], "c": 0, "d": "Easy", "e": "90s", "r": "Domestic" },
+  { "q": "Jane Campion became the first woman to win the Palme d'Or at Cannes for which 1993 film?", "a": ["The Piano", "An Angel at My Table", "Bright Star"], "c": 0, "d": "Medium", "e": "90s", "r": "International" },
+  { "q": "Which 1974 film directed by Liliana Cavani stars Charlotte Rampling and remains one of the most controversial 'Night Porter' stories ever filmed?", "a": ["The Night Porter", "The Skin", "Beyond Good and Evil"], "c": 0, "d": "Director Cut", "e": "New Hollywood", "r": "International" },
+  { "q": "Who won the Best Actress Oscar for her role as Virginia Woolf in the 2002 film 'The Hours'?", "a": ["Nicole Kidman", "Julianne Moore", "Meryl Streep"], "c": 0, "d": "Easy", "e": "Modern", "r": "Domestic" },
+  { "q": "Gillian Armstrong's 1979 debut helped launch the Australian New Wave; what was the title?", "a": ["My Brilliant Career", "The Last Wave", "Starstruck"], "c": 0, "d": "Hard", "e": "New Hollywood", "r": "International" },
+  { "q": "Who wrote and directed the 2020 psychological thriller 'Promising Young Woman'?", "a": ["Emerald Fennell", "Olivia Wilde", "Phoebe Waller-Bridge"], "c": 0, "d": "Medium", "e": "Modern", "r": "Domestic" },
+  { "q": "Which silent film executive and writer is credited with 'discovering' Rudolph Valentino and editing 'The Four Horsemen of the Apocalypse'?", "a": ["June Mathis", "Frances Marion", "Anita Loos"], "c": 0, "d": "Director Cut", "e": "Silent Era", "r": "Domestic" },
+  { "q": "Which 2023 film directed by Greta Gerwig shattered box office records for female directors?", "a": ["Barbie", "Little Women", "Lady Bird"], "c": 0, "d": "Easy", "e": "Modern", "r": "Domestic" },
+  { "q": "Stuntwoman Wendy Leech, who doubled for C-3PO and Princess Leia, is the daughter of which legendary James Bond stunt coordinator?", "a": ["George Leech", "Vic Armstrong", "Bob Simmons"], "c": 0, "d": "Easy", "e": "New Hollywood", "r": "International" },
+
+  { "q": "Which actress is famous for the line 'Fasten your seatbelts, it's going to be a bumpy night' in 'All About Eve'?", "a": ["Bette Davis", "Joan Crawford", "Audrey Hepburn"], "c": 0, "d": "Easy", "e": "Golden Age", "r": "Domestic" },
+  { "q": "Marilyn Monroe famously sang 'Diamonds Are a Girl's Best Friend' in which 1953 musical?", "a": ["Gentlemen Prefer Blondes", "How to Marry a Millionaire", "The Seven Year Itch"], "c": 0, "d": "Easy", "e": "Golden Age", "r": "Domestic" },
+  { "q": "Which actor starred as the 'Rube' in the 1939 classic 'Mr. Smith Goes to Washington'?", "a": ["James Stewart", "Henry Fonda", "Cary Grant"], "c": 0, "d": "Easy", "e": "Golden Age", "r": "Domestic" },
+  { "q": "Humphrey Bogart and Lauren Bacall first starred together in which 1944 noir film?", "a": ["To Have and Have Not", "The Big Sleep", "Dark Passage"], "c": 0, "d": "Easy", "e": "Golden Age", "r": "Domestic" },
+  { "q": "Elizabeth Taylor won her first Academy Award for playing a call girl in which 1960 film?", "a": ["BUtterfield 8", "Cleopatra", "Cat on a Hot Tin Roof"], "c": 0, "d": "Medium", "e": "Golden Age", "r": "Domestic" },
+  { "q": "Which Preston Sturges comedy features a group of eccentric millionaires known as 'The Ale and Quail Club'?", "a": ["The Palm Beach Story", "The Lady Eve", "Sullivan's Travels"], "c": 0, "d": "Hard", "e": "Golden Age", "r": "Domestic" },
+  { "q": "Director Alfred Hitchcock made a cameo in nearly all his films; in 'Lifeboat' (1944), where does he appear?", "a": ["In a newspaper ad", "As a passenger", "In a framed photo"], "c": 0, "d": "Director Cut", "e": "Golden Age", "r": "Domestic" },
+  { "q": "Which Billy Wilder film is considered a 'perfect script' and features a protagonist named C.C. Baxter?", "a": ["The Apartment", "Double Indemnity", "Some Like It Hot"], "c": 0, "d": "Hard", "e": "Golden Age", "r": "Domestic" },
+  { "q": "The 'Lubitsch Touch' refers to the sophisticated, witty style of which legendary director?", "a": ["Ernst Lubitsch", "Howard Hawks", "John Ford"], "c": 0, "d": "Medium", "e": "Golden Age", "r": "International" },
+  { "q": "John Ford is most famous for his Westerns, often filming in which iconic Arizona-Utah location?", "a": ["Monument Valley", "Death Valley", "Zion Canyon"], "c": 0, "d": "Medium", "e": "Golden Age", "r": "Domestic" },
+  { "q": "Which 'Golden Age' actress and director founded her own production company, Filmmakers, to tackle gritty social issues?", "a": ["Ida Lupino", "Dorothy Arzner", "Olivia de Havilland"], "c": 0, "d": "Hard", "e": "Golden Age", "r": "Domestic" },
+  { "q": "Dorothy Arzner is credited with inventing the 'boom mic' by attaching a microphone to a fishing rod for which actress?", "a": ["Clara Bow", "Joan Crawford", "Katharine Hepburn"], "c": 0, "d": "Director Cut", "e": "Golden Age", "r": "Domestic" },
+
+  { "q": "Buster Keaton is famous for performing a stunt where a house wall falls on him in which film?", "a": ["Steamboat Bill, Jr.", "The General", "Sherlock Jr."], "c": 0, "d": "Easy", "e": "Silent Era", "r": "Domestic" },
+  { "q": "Which 1915 D.W. Griffith film is historically significant for its technical innovation but widely condemned for its racism?", "a": ["The Birth of a Nation", "Intolerance", "Broken Blossoms"], "c": 0, "d": "Medium", "e": "Silent Era", "r": "Domestic" },
+  { "q": "Known as 'The Great Profile', which Barrymore family member starred in the 1920 'Dr. Jekyll and Mr. Hyde'?", "a": ["John Barrymore", "Lionel Barrymore", "Ethel Barrymore"], "c": 0, "d": "Medium", "e": "Silent Era", "r": "Domestic" },
+  { "q": "Which silent star was the first openly gay leading man in Hollywood, famous for 'Show People' (1928)?", "a": ["William Haines", "John Gilbert", "Ronald Colman"], "c": 0, "d": "Hard", "e": "Silent Era", "r": "Domestic" },
+  { "q": "Before his career was ruined by a scandalous trial, Roscoe 'Fatty' Arbuckle was a mentor to which fellow comedian?", "a": ["Buster Keaton", "Charlie Chaplin", "Harold Lloyd"], "c": 0, "d": "Medium", "e": "Silent Era", "r": "Domestic" },
+  { "q": "Which British-born actor was famous for his distinctive voice in 'talkies' but was a major silent star in 'Beau Geste' (1926)?", "a": ["Ronald Colman", "John Gilbert", "Douglas Fairbanks"], "c": 0, "d": "Medium", "e": "Silent Era", "r": "International" },
+  { "q": "John Gilbert's most famous silent-era pairing was with which legendary Swedish actress?", "a": ["Greta Garbo", "Ingrid Bergman", "Gloria Swanson"], "c": 0, "d": "Easy", "e": "Silent Era", "r": "Domestic" },
+  { "q": "Which silent-era star was the 'King of Hollywood' before Clark Gable, known for swashbuckling roles?", "a": ["Douglas Fairbanks", "John Gilbert", "William Haines"], "c": 0, "d": "Easy", "e": "Silent Era", "r": "Domestic" }
+
 ]

@@ -1,5 +1,3 @@
-This revised layout keeps every word of your text intact while weaving in the emojis and the "quest" phrase to match that classic game manual energy.
-
 ***
 
 # 🎬 [FIVE STAR TRIVIA]

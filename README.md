@@ -85,4 +85,6 @@ Achieve a **5-Star Score** (5 correct answers) in your chosen configuration. Mai
 * **Aesthetic:** 8-bit Arcade UI
 * **Requirements:** A love for the movies and a functioning mouse/tap input.
 
+[ 🐞 Found a Bug? Report it here ](https://github.com/ReginaExMachina/five-star-trivia/issues/new)
+
 *Developed with ❤️ by ReginaExMachina*

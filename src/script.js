@@ -1,3 +1,5 @@
+/* global toggleDrawer, startGame, toggleTheme */
+
 let questionsDB = []
 
 async function loadQuestions () {

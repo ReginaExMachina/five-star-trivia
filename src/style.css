@@ -1,8 +1,14 @@
         :root {
+            /* Dark Theme Default */
             --bg: #0e0e12;
             --panel: #252525;
             --text: #ffffff;
             --gold: #ffcc00;
+            --btn-bg: #333;
+            --btn-border: #fff;
+            --option-bg: #222;
+            --option-border: #555;
+            --drawer-border: #444;
             --pixel-border: 4px;
         }
 
@@ -14,13 +20,27 @@
             display: flex;
             height: 100vh;
             image-rendering: pixelated;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Light Theme Overrides */
+        body.light-theme {
+            --bg: #e0e0e0;
+            --panel: #cccccc;
+            --text: #1a1a1a;
+            --gold: #aa8800;
+            --btn-bg: #bbbbbb;
+            --btn-border: #1a1a1a;
+            --option-bg: #d9d9d9;
+            --option-border: #888;
+            --drawer-border: #999;
         }
 
         /* --- SIDEBAR --- */
         #side-menu {
             width: 280px;
             background: var(--panel);
-            border-right: var(--pixel-border) solid #444;
+            border-right: var(--pixel-border) solid var(--drawer-border);
             display: flex;
             flex-direction: column;
             padding: 30px 20px;
@@ -30,8 +50,9 @@
         .label { font-size: 8px; color: var(--gold); margin-bottom: 12px; }
 
         .toggle-btn, .start-btn {
-            background: #333;
-            border: var(--pixel-border) solid #fff;
+            background: var(--btn-bg);
+            border: var(--pixel-border) solid var(--btn-border);
+            color: var(--text);
             padding: 15px 10px;
             cursor: pointer;
             text-align: center;
@@ -78,7 +99,7 @@
             top: 50px;
             right: 0;
             background: var(--panel);
-            border: var(--pixel-border) solid #fff;
+            border: var(--pixel-border) solid var(--btn-border);
             width: 200px;
             padding: 10px;
             box-shadow: 6px 6px 0 #000;
@@ -97,8 +118,9 @@
         #question-text { font-size: 14px; line-height: 1.8; margin-bottom: 40px; text-align: center; }
 
         .option {
-            background: #222;
-            border: var(--pixel-border) solid #555;
+            background: var(--option-bg);
+            border: var(--pixel-border) solid var(--option-border);
+            color: var(--text);
             padding: 20px;
             margin: 15px 0;
             cursor: pointer;

@@ -1,0 +1,23 @@
+{
+  "name": "five-star-trivia",
+  "version": "1.0.0",
+  "description": "***",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReginaExMachina/five-star-trivia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ReginaExMachina/five-star-trivia/issues"
+  },
+  "homepage": "https://github.com/ReginaExMachina/five-star-trivia#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.2"
+  }
+}

@@ -116,3 +116,18 @@ function showResults() {
     state.streak = won ? state.streak + 1 : 0;
     document.getElementById('streak-display').innerText = `STREAK: ${state.streak}`;
 }
+
+function toggleTheme() {
+    const isLight = document.body.classList.toggle('light-theme');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    
+    // Close the drawer after selection
+    document.getElementById('drawer').style.display = 'none';
+}
+
+// Check for saved preference on page load
+window.onload = () => {
+    if (localStorage.getItem('theme') === 'light') {
+        document.body.classList.add('light-theme');
+    }
+};

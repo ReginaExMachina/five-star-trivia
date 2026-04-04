@@ -4,7 +4,7 @@ test.describe('Five Star Trivia Beta Regression', () => {
     
     test.beforeEach(async ({ page }) => {
         // Replace with your local dev URL or GitHub Pages URL
-        await page.goto('http://127.0.0.1:5500/index.html'); 
+        await page.goto('/'); 
     });
 
     test('Core Game Loop: Load, Filter, and Start', async ({ page }) => {

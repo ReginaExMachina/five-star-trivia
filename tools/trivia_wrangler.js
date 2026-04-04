@@ -1,130 +1,128 @@
-const fs = require('fs');
-const path = require('path');
-const readline = require('readline');
+const fs = require('fs')
+const path = require('path')
+const readline = require('readline')
 
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+  input: process.stdin,
+  output: process.stdout
+})
 
-const jsonPath = path.join(__dirname, '../questions.json');
+const jsonPath = path.join(__dirname, '../questions.json')
 
 // --- Helper: Load File ---
-function loadData() {
-    try {
-        const data = fs.readFileSync(jsonPath, 'utf8');
-        return JSON.parse(data);
-    } catch (err) {
-        console.error("\n[!] READ ERROR: Could not read or find questions.json in root.");
-        return null;
-    }
+function loadData () {
+  try {
+    const data = fs.readFileSync(jsonPath, 'utf8')
+    return JSON.parse(data)
+  } catch (err) {
+    console.error('\n[!] READ ERROR: Could not read or find questions.json in root.')
+    return null
+  }
 }
 
 // --- Sub-Program: Validate ---
-function validate() {
-    try {
-        const raw = fs.readFileSync(jsonPath, 'utf8');
-        JSON.parse(raw);
-        console.log("\n✅ YES: The file is valid JSON and correctly formatted.");
-    } catch (err) {
-        console.log("\n❌ NO: The file is NOT valid.");
-        // Extract line number from the Error message if possible
-        const lineMatch = err.message.match(/line (\d+)/);
-        if (lineMatch) {
-            console.log(`Potential issue found near line: ${lineMatch[1]}`);
-        }
-        console.log(`Error Detail: ${err.message}`);
+function validate () {
+  try {
+    const raw = fs.readFileSync(jsonPath, 'utf8')
+    JSON.parse(raw)
+    console.log('\n✅ YES: The file is valid JSON and correctly formatted.')
+  } catch (err) {
+    console.log('\n❌ NO: The file is NOT valid.')
+    // Extract line number from the Error message if possible
+    const lineMatch = err.message.match(/line (\d+)/)
+    if (lineMatch) {
+      console.log(`Potential issue found near line: ${lineMatch[1]}`)
     }
-    returnToMenu();
+    console.log(`Error Detail: ${err.message}`)
+  }
+  returnToMenu()
 }
 
 // --- Sub-Program: Arrange ---
-function arrange() {
-    const data = loadData();
-    if (!data) return returnToMenu();
+function arrange () {
+  const data = loadData()
+  if (!data) return returnToMenu()
 
-    const eraOrder = ["Silent Era", "Golden Age", "New Hollywood", "80s", "90s", "Modern"];
-    const diffOrder = ["Easy", "Medium", "Hard", "Director Cut"];
-    const regionOrder = ["Domestic", "International"];
+  const eraOrder = ['Silent Era', 'Golden Age', 'New Hollywood', '80s', '90s', 'Modern']
+  const diffOrder = ['Easy', 'Medium', 'Hard', 'Director Cut']
+  const regionOrder = ['Domestic', 'International']
 
-    const sorted = data.sort((a, b) => {
-        if (eraOrder.indexOf(a.e) !== eraOrder.indexOf(b.e)) 
-            return eraOrder.indexOf(a.e) - eraOrder.indexOf(b.e);
-        if (diffOrder.indexOf(a.d) !== diffOrder.indexOf(b.d)) 
-            return diffOrder.indexOf(a.d) - diffOrder.indexOf(b.d);
-        return regionOrder.indexOf(a.r) - regionOrder.indexOf(b.r);
-    });
+  const sorted = data.sort((a, b) => {
+    if (eraOrder.indexOf(a.e) !== eraOrder.indexOf(b.e)) { return eraOrder.indexOf(a.e) - eraOrder.indexOf(b.e) }
+    if (diffOrder.indexOf(a.d) !== diffOrder.indexOf(b.d)) { return diffOrder.indexOf(a.d) - diffOrder.indexOf(b.d) }
+    return regionOrder.indexOf(a.r) - regionOrder.indexOf(b.r)
+  })
 
-    const newPath = path.join(__dirname, '../questions_sorted.json');
-    try {
-        // Map each object to a single-line string and wrap in array brackets
-        const tightFormat = "[\n  " + sorted.map(obj => JSON.stringify(obj)).join(",\n  ") + "\n]";
-        
-        fs.writeFileSync(newPath, tightFormat);
-        console.log(`\n✨ Success! Sorted copy created: questions_sorted.json`);
-    } catch (err) {
-        console.error("\n[!] WRITE ERROR: Could not save the sorted file.");
-    }
-    returnToMenu();
+  const newPath = path.join(__dirname, '../questions_sorted.json')
+  try {
+    // Map each object to a single-line string and wrap in array brackets
+    const tightFormat = '[\n  ' + sorted.map(obj => JSON.stringify(obj)).join(',\n  ') + '\n]'
+
+    fs.writeFileSync(newPath, tightFormat)
+    console.log('\n✨ Success! Sorted copy created: questions_sorted.json')
+  } catch (err) {
+    console.error('\n[!] WRITE ERROR: Could not save the sorted file.')
+  }
+  returnToMenu()
 }
 
 // --- Sub-Program: Simple Stats ---
-function simpleStats() {
-    const data = loadData();
-    if (!data) return returnToMenu();
+function simpleStats () {
+  const data = loadData()
+  if (!data) return returnToMenu()
 
-    const counts = { e: {}, d: {}, r: {} };
-    data.forEach(q => {
-        counts.e[q.e] = (counts.e[q.e] || 0) + 1;
-        counts.d[q.d] = (counts.d[q.d] || 0) + 1;
-        counts.r[q.r] = (counts.r[q.r] || 0) + 1;
-    });
+  const counts = { e: {}, d: {}, r: {} }
+  data.forEach(q => {
+    counts.e[q.e] = (counts.e[q.e] || 0) + 1
+    counts.d[q.d] = (counts.d[q.d] || 0) + 1
+    counts.r[q.r] = (counts.r[q.r] || 0) + 1
+  })
 
-    console.log(`\n--- SIMPLE STATS ---`);
-    console.log(`Total Questions: ${data.length}`);
-    console.log(`\nBy Era:`, counts.e);
-    console.log(`By Difficulty:`, counts.d);
-    console.log(`By Region:`, counts.r);
-    returnToMenu();
+  console.log('\n--- SIMPLE STATS ---')
+  console.log(`Total Questions: ${data.length}`)
+  console.log('\nBy Era:', counts.e)
+  console.log('By Difficulty:', counts.d)
+  console.log('By Region:', counts.r)
+  returnToMenu()
 }
 
 // --- Sub-Program: Complex Stats ---
-function complexStats() {
-    const data = loadData();
-    if (!data) return returnToMenu();
+function complexStats () {
+  const data = loadData()
+  if (!data) return returnToMenu()
 
-    let report = "ERA | DIFFICULTY | REGION | COUNT\n------------------------------------\n";
-    const matrix = {};
+  let report = 'ERA | DIFFICULTY | REGION | COUNT\n------------------------------------\n'
+  const matrix = {}
 
-    data.forEach(q => {
-        const key = `${q.e} | ${q.d} | ${q.r}`;
-        matrix[key] = (matrix[key] || 0) + 1;
-    });
+  data.forEach(q => {
+    const key = `${q.e} | ${q.d} | ${q.r}`
+    matrix[key] = (matrix[key] || 0) + 1
+  })
 
-    Object.keys(matrix).sort().forEach(k => {
-        report += `${k} : ${matrix[k]}\n`;
-    });
+  Object.keys(matrix).sort().forEach(k => {
+    report += `${k} : ${matrix[k]}\n`
+  })
 
-    console.log(`\n--- COMPLEX STATS ---`);
-    console.log(report);
-    
-    const statsPath = path.join(__dirname, 'full_stats_report.txt');
-    fs.writeFileSync(statsPath, report);
-    console.log(`Detailed report saved to: tools/full_stats_report.txt`);
-    
-    returnToMenu();
+  console.log('\n--- COMPLEX STATS ---')
+  console.log(report)
+
+  const statsPath = path.join(__dirname, 'full_stats_report.txt')
+  fs.writeFileSync(statsPath, report)
+  console.log('Detailed report saved to: tools/full_stats_report.txt')
+
+  returnToMenu()
 }
 
 // --- Navigation ---
-function returnToMenu() {
-    rl.question('\nPress Enter to Return to Menu...', () => {
-        showMenu();
-    });
+function returnToMenu () {
+  rl.question('\nPress Enter to Return to Menu...', () => {
+    showMenu()
+  })
 }
 
-function showMenu() {
-    console.clear();
-    console.log(`
+function showMenu () {
+  console.clear()
+  console.log(`
 ====================================
       TRIVIA WRANGLER v1.0
 ====================================
@@ -134,16 +132,16 @@ function showMenu() {
  [C] Complex Stats (Full Matrix)
  [Q] Quit
 ====================================
-    `);
-    rl.question('Select an option: ', (choice) => {
-        const c = choice.toUpperCase();
-        if (c === 'V') validate();
-        else if (c === 'A' || c === 'R') arrange();
-        else if (c === 'S') simpleStats();
-        else if (c === 'C') complexStats();
-        else if (c === 'Q') process.exit();
-        else showMenu();
-    });
+    `)
+  rl.question('Select an option: ', (choice) => {
+    const c = choice.toUpperCase()
+    if (c === 'V') validate()
+    else if (c === 'A' || c === 'R') arrange()
+    else if (c === 'S') simpleStats()
+    else if (c === 'C') complexStats()
+    else if (c === 'Q') process.exit()
+    else showMenu()
+  })
 }
 
-showMenu();
+showMenu()

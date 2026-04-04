@@ -1,13 +1,13 @@
 # Changelog
+
 All notable changes to **Five Star Trivia** will be documented in this file.
 
-# Changelog
-
 ## [Unreleased]
+
 ### Added
 - Custom graphic header (replacing ASCII/Emoji title).
 - High Score Arcade-style page.
-- Credits
+- Credits.
 
 ### Planned
 - Playtest feedback implementation.
@@ -16,7 +16,17 @@ All notable changes to **Five Star Trivia** will be documented in this file.
 
 ---
 
+## [0.0.3] - 2026-04-03
+
+### Added
+- Linter integration.
+- Git Hook for Changelog reminders.
+
+### Changed
+- Modified the `Arrange` sub-program in `trivia_wrangler.js` to output a tighter JSON format.
+
 ## [0.0.2] - 2026-04-03
+
 ### Added
 - Created `trivia_wrangler.js` tool for JSON validation and sorting.
 - Light/Dark mode toggle.
@@ -31,12 +41,4 @@ All notable changes to **Five Star Trivia** will be documented in this file.
 ### Fixed
 - Fixed "Start" button inactivity by implementing `async/await` for data loading.
 - Resolved file path issues by moving `questions.json` to the project root.
-- Fixed tests file path issue
-
-## [0.0.3] - 2026-04-03
-### Added
-- Linter
-- Git Hook for Changelog
-
-### Changed
-- Arrange sub-program in trivia_wrangler modified to tighter json format
+- Fixed Playwright test file path issues.

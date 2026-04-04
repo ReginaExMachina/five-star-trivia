@@ -57,7 +57,10 @@ function arrange() {
 
     const newPath = path.join(__dirname, '../questions_sorted.json');
     try {
-        fs.writeFileSync(newPath, JSON.stringify(sorted, null, 2));
+        // Map each object to a single-line string and wrap in array brackets
+        const tightFormat = "[\n  " + sorted.map(obj => JSON.stringify(obj)).join(",\n  ") + "\n]";
+        
+        fs.writeFileSync(newPath, tightFormat);
         console.log(`\n✨ Success! Sorted copy created: questions_sorted.json`);
     } catch (err) {
         console.error("\n[!] WRITE ERROR: Could not save the sorted file.");

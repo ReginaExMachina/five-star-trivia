@@ -31,3 +31,12 @@ All notable changes to **Five Star Trivia** will be documented in this file.
 ### Fixed
 - Fixed "Start" button inactivity by implementing `async/await` for data loading.
 - Resolved file path issues by moving `questions.json` to the project root.
+- Fixed tests file path issue
+
+## [0.0.3] - 2026-04-03
+### Added
+- Linter
+- Git Hook for Changelog
+
+### Changed
+- Arrange sub-program in trivia_wrangler modified to tighter json format

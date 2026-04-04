@@ -1,39 +1,43 @@
 ERA | DIFFICULTY | REGION | COUNT
 ------------------------------------
-80s | Director Cut | Domestic : 1
-80s | Director Cut | International : 2
-80s | Easy | Domestic : 11
-80s | Easy | International : 3
-80s | Hard | International : 1
-80s | Medium | Domestic : 3
-80s | Medium | International : 1
-90s | Director Cut | Domestic : 1
-90s | Director Cut | International : 2
-90s | Easy | Domestic : 14
-90s | Easy | International : 4
-90s | Hard | International : 1
-90s | Medium | Domestic : 4
-90s | Medium | International : 2
-Golden Age | Director Cut | Domestic : 3
-Golden Age | Director Cut | International : 1
-Golden Age | Easy | Domestic : 12
-Golden Age | Easy | International : 2
-Golden Age | Hard | Domestic : 6
-Golden Age | Hard | International : 3
-Golden Age | Medium | Domestic : 5
-Golden Age | Medium | International : 3
-Modern | Director Cut | Domestic : 3
-Modern | Director Cut | International : 1
-Modern | Easy | Domestic : 12
-Modern | Easy | International : 1
-Modern | Medium | Domestic : 2
-Modern | Medium | International : 4
+80s | Director Cut | Domestic : 19
+80s | Director Cut | International : 21
+80s | Easy | Domestic : 19
+80s | Easy | International : 20
+80s | Hard | Domestic : 12
+80s | Hard | International : 11
+80s | Medium | Domestic : 24
+80s | Medium | International : 21
+90s | Director Cut | Domestic : 20
+90s | Director Cut | International : 21
+90s | Easy | Domestic : 21
+90s | Easy | International : 20
+90s | Hard | Domestic : 22
+90s | Hard | International : 21
+90s | Medium | Domestic : 11
+90s | Medium | International : 29
+Golden Age | Director Cut | Domestic : 29
+Golden Age | Director Cut | International : 30
+Golden Age | Easy | Domestic : 17
+Golden Age | Easy | International : 6
+Golden Age | Hard | Domestic : 8
+Golden Age | Hard | International : 8
+Golden Age | Medium | Domestic : 10
+Golden Age | Medium | International : 6
+Modern | Director Cut | Domestic : 25
+Modern | Director Cut | International : 25
+Modern | Easy | Domestic : 50
+Modern | Easy | International : 25
+Modern | Hard | Domestic : 23
+Modern | Hard | International : 22
+Modern | Medium | Domestic : 24
+Modern | Medium | International : 21
 New Hollywood | Director Cut | Domestic : 1
 New Hollywood | Director Cut | International : 4
 New Hollywood | Easy | Domestic : 10
 New Hollywood | Easy | International : 3
 New Hollywood | Hard | International : 3
-New Hollywood | Medium | Domestic : 1
+New Hollywood | Medium | Domestic : 2
 New Hollywood | Medium | International : 1
 Silent Era | Director Cut | Domestic : 2
 Silent Era | Director Cut | International : 3

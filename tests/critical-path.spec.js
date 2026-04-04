@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test('E2E: Complete Game Loop and Replay', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('./');
 
     // 1. Start the game
     await page.click('#press-start');

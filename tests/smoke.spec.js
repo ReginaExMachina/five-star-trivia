@@ -4,7 +4,7 @@ test.describe('Beta Smoke Test: Quick Path', () => {
     
     test('Start -> Answer -> Toggle Theme -> Reset', async ({ page }) => {
         // 1. Go to game (Update URL as needed)
-        await page.goto('/');
+        await page.goto('./');
         await expect(page).toHaveTitle(/Five Star Trivia/);
 
         // 2. Start the game

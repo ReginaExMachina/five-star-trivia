@@ -28,7 +28,7 @@ export default defineConfig({
   use: {
     baseURL: process.env.CI 
       ? 'https://reginaexmachina.github.io/five-star-trivia/' 
-      : 'http://127.0.0.1:5500/index.html',
+      : 'http://127.0.0.1:5500/',
 
     trace: 'on-first-retry',
   },

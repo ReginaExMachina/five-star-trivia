@@ -20,9 +20,9 @@ const diffs = ['Easy', 'Medium', 'Hard', 'Director Cut']
 const eras = ['All', 'Silent Era', 'Golden Age', 'New Hollywood', '80s', '90s', 'Modern']
 
 const state = {
-  diff: 'Easy',
+  diff: 'All',
   era: 'All',
-  region: 'Domestic',
+  region: 'All',
   score: 0,
   streak: 0,
   currentIdx: 0,
@@ -43,21 +43,18 @@ document.getElementById('era-toggle').onclick = (e) => {
   e.target.innerText = state.era
 }
 document.getElementById('region-toggle').onclick = (e) => {
-  state.region = state.region === 'Domestic' ? 'International' : 'Domestic'
+  const regions = ['All', 'Domestic', 'International']
+  state.region = regions[(regions.indexOf(state.region) + 1) % regions.length]
   e.target.innerText = state.region
 }
 
 function startGame () {
-  // Error Check: If DB is empty, the fetch hasn't finished yet.
-  if (questionsDB.length === 0) {
-    console.log('Waiting for data...')
-    return
-  }
+  if (questionsDB.length === 0) return
 
   let pool = questionsDB.filter(q =>
-    q.d === state.diff &&
-        q.r === state.region &&
-        (state.era === 'All' || q.e === state.era)
+    (state.diff === 'All' || q.d === state.diff) &&      // Support All Difficulty
+    (state.region === 'All' || q.r === state.region) &&  // Support All Region
+    (state.era === 'All' || q.e === state.era)
   )
 
   if (pool.length < 5) {
@@ -137,3 +134,14 @@ window.onload = () => {
     document.body.classList.add('light-theme')
   }
 }
+
+window.addEventListener('keydown', (e) => {
+  const options = document.querySelectorAll('.option');
+  if (options.length === 0) return;
+
+  // Maps keys 1-4 to the options
+  const keyMap = { '1': 0, '2': 1, '3': 2, '4': 3 };
+  if (keyMap[e.key] !== undefined) {
+    options[keyMap[e.key]].click();
+  }
+});

@@ -12,7 +12,7 @@ test.describe('Five Star Trivia Beta Regression', () => {
 
     // Change Difficulty to Medium
     await page.click('#diff-toggle')
-    await expect(page.locator('#diff-toggle')).toHaveText('Medium')
+    await expect(page.locator('#diff-toggle')).toHaveText('Easy')
 
     // Start Game
     await page.click('#press-start')

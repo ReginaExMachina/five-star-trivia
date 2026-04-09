@@ -7,7 +7,16 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
+// Pathing setup
 const jsonPath = path.join(__dirname, '../questions.json')
+const dataDir = path.join(__dirname, '../data')
+const csvPath = path.join(dataDir, 'questions.csv')
+const outputJsonPath = path.join(dataDir, 'questions.json')
+
+// Ensure data directory exists for transforms
+if (!fs.existsSync(dataDir)) {
+  fs.mkdirSync(dataDir)
+}
 
 // --- Helper: Load File ---
 function loadData () {
@@ -28,7 +37,6 @@ function validate () {
     console.log('\n✅ YES: The file is valid JSON and correctly formatted.')
   } catch (err) {
     console.log('\n❌ NO: The file is NOT valid.')
-    // Extract line number from the Error message if possible
     const lineMatch = err.message.match(/line (\d+)/)
     if (lineMatch) {
       console.log(`Potential issue found near line: ${lineMatch[1]}`)
@@ -55,13 +63,61 @@ function arrange () {
 
   const newPath = path.join(__dirname, '../questions_sorted.json')
   try {
-    // Map each object to a single-line string and wrap in array brackets
     const tightFormat = '[\n  ' + sorted.map(obj => JSON.stringify(obj)).join(',\n  ') + '\n]'
-
     fs.writeFileSync(newPath, tightFormat)
     console.log('\n✨ Success! Sorted copy created: questions_sorted.json')
   } catch (err) {
     console.error('\n[!] WRITE ERROR: Could not save the sorted file.')
+  }
+  returnToMenu()
+}
+
+// --- Sub-Program: Transform ---
+function transformMenu () {
+  console.log('\n--- TRANSFORM DATA ---')
+  rl.question('Transform to [J]SON or [C]SV? (Any other key to cancel): ', (choice) => {
+    const c = choice.toUpperCase()
+    if (c === 'J') transformToJson()
+    else if (c === 'C') transformToCsv()
+    else showMenu()
+  })
+}
+
+function transformToJson () {
+  try {
+    if (!fs.existsSync(csvPath)) throw new Error(`CSV not found at ${csvPath}`)
+    const data = fs.readFileSync(csvPath, 'utf8')
+    const lines = data.split('\n').filter(line => line.trim() !== '')
+    
+    const questions = lines.slice(1).map(line => {
+      const [q, a0, a1, a2, c, d, e, r] = line.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(item => item.trim().replace(/^"|"$/g, ''))
+      return { q, a: [a0, a1, a2], c: parseInt(c), d, e, r }
+    })
+
+    const tightFormat = '[\n  ' + questions.map(q => JSON.stringify(q)).join(',\n  ') + '\n]'
+    
+    fs.writeFileSync(outputJsonPath, tightFormat) 
+    console.log(`\n✅ Success! ${questions.length} questions written to data/questions.json`)
+  } catch (err) {
+    console.error(`\n❌ TRANSFORM ERROR: ${err.message}`)
+  }
+  returnToMenu()
+}
+
+function transformToCsv () {
+  try {
+    const data = loadData()
+    if (!data) return returnToMenu()
+
+    const header = 'question,option0,option1,option2,correctIndex,difficulty,era,region\n'
+    const rows = data.map(q => {
+      return `"${q.q}","${q.a[0]}","${q.a[1]}","${q.a[2]}",${q.c},"${q.d}","${q.e}","${q.r}"`
+    }).join('\n')
+
+    fs.writeFileSync(csvPath, header + rows)
+    console.log(`\n✅ Success! CSV created at ${csvPath}`)
+  } catch (err) {
+    console.error(`\n❌ TRANSFORM ERROR: ${err.message}`)
   }
   returnToMenu()
 }
@@ -126,10 +182,11 @@ function showMenu () {
 ====================================
       TRIVIA WRANGLER v1.0
 ====================================
- [V] Validate questions.json
- [A] Arrange/Sort File (Output New)
+ [V] Validate
+ [A] Arrange File
+ [T] Transform
  [S] Simple Stats
- [C] Complex Stats (Full Matrix)
+ [C] Complex Stats
  [Q] Quit
 ====================================
     `)
@@ -137,6 +194,7 @@ function showMenu () {
     const c = choice.toUpperCase()
     if (c === 'V') validate()
     else if (c === 'A' || c === 'R') arrange()
+    else if (c === 'T') transformMenu()
     else if (c === 'S') simpleStats()
     else if (c === 'C') complexStats()
     else if (c === 'Q') process.exit()

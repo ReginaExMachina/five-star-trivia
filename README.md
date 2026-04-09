@@ -1,23 +1,23 @@
 ***
 
 # 🎬 [FIVE STAR TRIVIA]
-### *OFFICIAL GAME MANUAL (RD26)*
+### *OFFICIAL GAME MANUAL*
 
-     --------------------------------------------------
+     ----------------------------------------------------
     |   [   ]  [   ]  [   ]  [   ]  [   ]  [   ]  [   ]  |
-    |                                                  |
-    |               F I V E   S T A R                  |
-    |                                                  |
-    |                 T R I V I A                      |
-    |                                                  |
-    |            A CINEMATIC CHALLENGE                 |
-    |                                                  |
-    |  Version 1.1 / Serial: R-XM-001 / REG: G         |
+    |                                                    |
+    |               F I V E   S T A R                    |
+    |                                                    |
+    |                 T R I V I A                        |
+    |                                                    |
+    |            A CINEMATIC CHALLENGE                   |
+    |                                                    |
+    |           |
     |   [   ]  [   ]  [   ]  [   ]  [   ]  [   ]  [   ]  |
-     --------------------------------------------------
+     ----------------------------------------------------
 
      ****************************************************
-     * 🕹️ -> [ CLICK HERE TO PLAY ] <- 🎮           *
+     * 🕹️ -> [ LINKS TO PLAY ] <- 🎮           *
      * https://reginaexmachina.github.io/five-star-trivia/      *
      * (Secondary Mirror: itch.io Link TBD)          *
      ****************************************************
@@ -26,9 +26,9 @@
 
 ## [I. OPERATOR'S INTRODUCTION] ✨
 
-**[FIVE STAR TRIVIA](https://reginaexmachina.github.io/five-star-trivia/)** is an arcade-inspired challenge for film students and casual moviegoers alike. We have optimized this interface for maximum nostalgic output, using 8-bit styling and high-contrast visuals.
+**[FIVE STAR TRIVIA](https://reginaexmachina.github.io/five-star-trivia/)** is an arcade-inspired challenge for film students and casual moviegoers alike, using 8-bit styling and high-contrast visuals.
 
-Your mission, should you choose to accept it, is simple: Navigate a century of film history, maintain your streak, and embark on **the quest for a perfect 5-star rating** from the elusive "Critic’s Circle" (the Game Engine).
+Your mission, should you choose to accept it, is simple: Navigate a century of film history, maintain your streak, and embark on **the quest for a perfect 5-star rating** from the elusive "Critic’s Circle".
 
 ---
 
@@ -37,7 +37,10 @@ Your mission, should you choose to accept it, is simple: Navigate a century of f
 *Attention: Use the left-hand menu to configure your experience before starting the round.*
 
 [ ]   **THE ERA SELECTION**
-      Configure the game engine to pull from specific time periods, or select "All" for a true global tour of cinema.
+
+      Configure the game engine to pull from specific time periods, or select "All".
+
+      * *ALL*
       * *SILENT ERA:* (e.g., *Metropolis*, *Nosferatu*)
       * *GOLDEN AGE:* (e.g., *The Wizard of Oz*, Hitchcock)
       * *NEW HOLLYWOOD:* (e.g., *Godfather*, *Taxi Driver*)
@@ -45,8 +48,10 @@ Your mission, should you choose to accept it, is simple: Navigate a century of f
       * *MODERN:* (e.g., *Parasite*, *The Avengers*, *Barbie*)
 
 [ ]   **MARKET SELECTION (REGION)**
-      * *[X] DOMESTIC:* Focus on Hollywood-centric questions.
-      * *[ ] INTERNATIONAL:* Expand your focus to World Cinema.
+
+      * *[X] ALL*
+      * *[] DOMESTIC:* Focus on Hollywood-centric questions.
+      * *[ ] INTERNATIONAL:* World Cinema.
 
 ---
 
@@ -55,7 +60,7 @@ Your mission, should you choose to accept it, is simple: Navigate a century of f
 Choose your level of expert analysis. If your choice has fewer than 5 valid questions, the Game Engine will backfill (automatically fill) from the wider question pool.
 
       | LEVEL | DESCRIPTION | STAKES |
-      |---|---|---|
+
       | **EASY** | Casual Moviegoer | Low. Safe for newcomers. |
       | **MEDIUM** | The Weekend Marathoner | Normal. Some deep cuts. |
       | **HARD** | Student of Film | High. Focus on DP, Director, Year. |
@@ -85,6 +90,6 @@ Achieve a **5-Star Score** (5 correct answers) in your chosen configuration. Mai
 * **Aesthetic:** 8-bit Arcade UI
 * **Requirements:** A love for the movies and a functioning mouse/tap input.
 
-[ 🐞 Found a Bug? Report it here ](https://github.com/ReginaExMachina/five-star-trivia/issues/new)
+[ 🐞 Found a Bug? Report it here ](https://github.com/ReginaExMachina/five-star-trivia/issues/new?bug_report.md)
 
 *Developed with ❤️ by ReginaExMachina*

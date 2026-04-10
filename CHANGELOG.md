@@ -5,28 +5,31 @@ All notable changes to **Five Star Trivia** will be documented in this file.
 ## [Unreleased]
 
 ### Added
-- Custom graphic header (replacing ASCII/Emoji title).
 - High Score Arcade-style page.
 - Credits.
 
 ### Planned
-- Playtest feedback implementation.
-- Sound effects (8-bit "Correct/Incorrect" chirps).
+- Sound effects (8-bit "Correct/Incorrect" chirps, victory music).
 - Music (ON/OFF toggle).
 
 ---
 
+## [0.0.5] - 2026-04-09
+
+### Added in 0.0.5
+- Custom icon for both themes.
+
 ## [0.0.4] - 2026-04-08
 
 ### Added in 0.0.4
-- All defaults for Difficulty and Region
-- Bug template
+- All defaults for Difficulty and Region.
+- Bug template.
 - Reached 1000+ questions!
 
 ### Changed in 0.0.4
-- Transform options in trivia_wrangler use tighter format
-- Edits to README
-- Removed auto-linter
+- Transform options in trivia_wrangler use tighter format.
+- Edits to README.
+- Removed auto-linter.
 
 ## [0.0.3] - 2026-04-03
 

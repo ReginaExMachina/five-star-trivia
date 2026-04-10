@@ -12,14 +12,14 @@
     |                                                    |
     |            A CINEMATIC CHALLENGE                   |
     |                                                    |
-    |           |
+    |                                                    |
     |   [   ]  [   ]  [   ]  [   ]  [   ]  [   ]  [   ]  |
      ----------------------------------------------------
 
      ****************************************************
-     * 🕹️ -> [ LINKS TO PLAY ] <- 🎮           *
-     * https://reginaexmachina.github.io/five-star-trivia/      *
-     * (Secondary Mirror: itch.io Link TBD)          *
+     * 🕹️ -> [ LINKS TO PLAY ] <- 🎮                   *
+     * https://reginaexmachina.github.io/five-star-trivia/
+     * (Secondary Mirror: itch.io Link TBD)             *
      ****************************************************
 
 ---

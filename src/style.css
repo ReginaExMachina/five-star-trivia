@@ -36,6 +36,23 @@
             --drawer-border: #999;
         }
 
+        /* Icon (Dark Theme) */
+        .title-icon {
+            content: url('../assets/clapboard.png');
+            width: 80px;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            image-rendering: pixelated;
+        }
+
+        /* Icon (Light Theme Override) */
+        body.light-theme .title-icon {
+            content: url('../assets/clapboard_lgt.png');
+        }
+
         /* --- SIDEBAR --- */
         #side-menu {
             width: 280px;
@@ -168,6 +185,18 @@
             50% { opacity: 0; }
         }
 
+        .title-icon {
+            width: 80px;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+    
+            image-rendering: pixelated; 
+            image-rendering: crisp-edges;
+        }
+
         /* --- STAR SCORE DISPLAY --- */
         #star-display {
             text-align: center;
@@ -175,6 +204,7 @@
             margin-bottom: 30px;
             letter-spacing: 6px;
         }
+
     /* --- MOBILE RESPONSIVENESS --- */
     @media (max-width: 768px) {
         body {

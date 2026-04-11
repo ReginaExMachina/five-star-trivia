@@ -1,50 +1,50 @@
 ERA | DIFFICULTY | REGION | COUNT
 ------------------------------------
-80s | Director Cut | Domestic : 19
-80s | Director Cut | International : 21
-80s | Easy | Domestic : 28
-80s | Easy | International : 22
-80s | Hard | Domestic : 17
-80s | Hard | International : 13
-80s | Medium | Domestic : 30
-80s | Medium | International : 22
-90s | Director Cut | Domestic : 21
+80s | Director Cut | Domestic : 22
+80s | Director Cut | International : 23
+80s | Easy | Domestic : 37
+80s | Easy | International : 31
+80s | Hard | Domestic : 20
+80s | Hard | International : 21
+80s | Medium | Domestic : 41
+80s | Medium | International : 31
+90s | Director Cut | Domestic : 24
 90s | Director Cut | International : 21
-90s | Easy | Domestic : 21
-90s | Easy | International : 20
-90s | Hard | Domestic : 22
-90s | Hard | International : 22
-90s | Medium | Domestic : 11
-90s | Medium | International : 31
-Golden Age | Director Cut | Domestic : 30
-Golden Age | Director Cut | International : 30
-Golden Age | Easy | Domestic : 22
-Golden Age | Easy | International : 7
-Golden Age | Hard | Domestic : 12
-Golden Age | Hard | International : 11
-Golden Age | Medium | Domestic : 16
-Golden Age | Medium | International : 10
-Modern | Director Cut | Domestic : 29
-Modern | Director Cut | International : 26
-Modern | Easy | Domestic : 62
-Modern | Easy | International : 26
-Modern | Hard | Domestic : 36
-Modern | Hard | International : 23
-Modern | Medium | Domestic : 40
-Modern | Medium | International : 27
-New Hollywood | Director Cut | Domestic : 20
-New Hollywood | Director Cut | International : 22
-New Hollywood | Easy | Domestic : 33
-New Hollywood | Easy | International : 30
-New Hollywood | Hard | Domestic : 33
-New Hollywood | Hard | International : 20
-New Hollywood | Medium | Domestic : 31
-New Hollywood | Medium | International : 31
+90s | Easy | Domestic : 35
+90s | Easy | International : 23
+90s | Hard | Domestic : 27
+90s | Hard | International : 31
+90s | Medium | Domestic : 27
+90s | Medium | International : 36
+Golden Age | Director Cut | Domestic : 35
+Golden Age | Director Cut | International : 37
+Golden Age | Easy | Domestic : 41
+Golden Age | Easy | International : 24
+Golden Age | Hard | Domestic : 29
+Golden Age | Hard | International : 21
+Golden Age | Medium | Domestic : 39
+Golden Age | Medium | International : 28
+Modern | Director Cut | Domestic : 36
+Modern | Director Cut | International : 31
+Modern | Easy | Domestic : 110
+Modern | Easy | International : 43
+Modern | Hard | Domestic : 55
+Modern | Hard | International : 36
+Modern | Medium | Domestic : 71
+Modern | Medium | International : 57
+New Hollywood | Director Cut | Domestic : 23
+New Hollywood | Director Cut | International : 25
+New Hollywood | Easy | Domestic : 39
+New Hollywood | Easy | International : 31
+New Hollywood | Hard | Domestic : 41
+New Hollywood | Hard | International : 27
+New Hollywood | Medium | Domestic : 39
+New Hollywood | Medium | International : 35
 Silent Era | Director Cut | Domestic : 21
 Silent Era | Director Cut | International : 21
 Silent Era | Easy | Domestic : 20
 Silent Era | Easy | International : 21
 Silent Era | Hard | Domestic : 23
-Silent Era | Hard | International : 10
-Silent Era | Medium | Domestic : 24
-Silent Era | Medium | International : 22
+Silent Era | Hard | International : 12
+Silent Era | Medium | Domestic : 27
+Silent Era | Medium | International : 23

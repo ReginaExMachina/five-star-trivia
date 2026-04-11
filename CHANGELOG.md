@@ -10,6 +10,7 @@ All notable changes to **Five Star Trivia** will be documented in this file.
 
 ### Planned
 - Sound effects (8-bit "Correct/Incorrect" chirps, victory music).
+- Clear game condition.
 - Music (ON/OFF toggle).
 
 ---

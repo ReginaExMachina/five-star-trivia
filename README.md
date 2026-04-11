@@ -50,7 +50,7 @@ Your mission, should you choose to accept it, is simple: Navigate a century of f
 [ ]   **MARKET SELECTION (REGION)**
 
       * *[X] ALL*
-      * *[] DOMESTIC:* Focus on Hollywood-centric questions.
+      * *[ ] DOMESTIC:* Focus on Hollywood-centric questions.
       * *[ ] INTERNATIONAL:* World Cinema.
 
 ---
@@ -92,4 +92,4 @@ Achieve a **5-Star Score** (5 correct answers) in your chosen configuration. Mai
 
 [ 🐞 Found a Bug? Report it here ](https://github.com/ReginaExMachina/five-star-trivia/issues/new?bug_report.md)
 
-*Developed with ❤️ by ReginaExMachina*
+*Developed with ❤️  by ReginaExMachina*

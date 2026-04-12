@@ -13,6 +13,9 @@ All notable changes to **Five Star Trivia** will be documented in this file.
 - Clear game condition.
 - Music (ON/OFF toggle).
 
+### Fixed
+- Special character handling for trivia_wrangler transform.
+
 ---
 
 ## [0.0.5] - 2026-04-09

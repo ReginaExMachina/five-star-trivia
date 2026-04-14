@@ -9,7 +9,7 @@ All notable changes to **Five Star Trivia** will be documented in this file.
 - Credits.
 
 ### Planned
-- Sound effects (8-bit "Correct/Incorrect" chirps, victory music).
+- Sound effects (8-bit "Correct/Incorrect" chirps).
 - Clear game condition.
 - Music (ON/OFF toggle).
 
@@ -17,6 +17,11 @@ All notable changes to **Five Star Trivia** will be documented in this file.
 - Special character handling for trivia_wrangler transform.
 
 ---
+
+## [1.0.0] - 2026-04-13
+
+### Added in BETA
+- Sound effects for button presses, victory and fail music.
 
 ## [0.0.5] - 2026-04-09
 

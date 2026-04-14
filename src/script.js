@@ -14,6 +14,11 @@ async function loadQuestions () {
 
 loadQuestions()
 
+const playSfx = (fileName) => {
+  const audio = new Audio(`assets/${fileName}`);
+  audio.play().catch(err => console.log("Audio playback blocked:", err));
+};
+
 const diffs = ['All', 'Easy', 'Medium', 'Hard', 'Director Cut']
 const eras = ['All', 'Silent Era', 'Golden Age', 'New Hollywood', '80s', '90s', 'Modern']
 
@@ -28,19 +33,23 @@ const state = {
 }
 
 function toggleDrawer () {
+  playSfx('whoosh.wav');
   const d = document.getElementById('drawer')
   d.style.display = d.style.display === 'block' ? 'none' : 'block'
 }
 
 document.getElementById('diff-toggle').onclick = (e) => {
+  playSfx('confirm.wav');
   state.diff = diffs[(diffs.indexOf(state.diff) + 1) % diffs.length]
   e.target.innerText = state.diff
 }
 document.getElementById('era-toggle').onclick = (e) => {
+  playSfx('confirm.wav');
   state.era = eras[(eras.indexOf(state.era) + 1) % eras.length]
   e.target.innerText = state.era
 }
 document.getElementById('region-toggle').onclick = (e) => {
+  playSfx('confirm.wav');
   const regions = ['All', 'Domestic', 'International']
   state.region = regions[(regions.indexOf(state.region) + 1) % regions.length]
   e.target.innerText = state.region
@@ -48,6 +57,7 @@ document.getElementById('region-toggle').onclick = (e) => {
 
 function startGame () {
   if (questionsDB.length === 0) return
+  playSfx('click.wav');
 
   let pool = questionsDB.filter(q =>
     (state.diff === 'All' || q.d === state.diff) &&      // Support All Difficulty
@@ -87,6 +97,7 @@ function renderQuestion () {
     btn.className = 'option'
     btn.innerText = opt
     btn.onclick = () => {
+      playSfx('click.wav');
       const btns = document.querySelectorAll('.option')
       btns.forEach(b => b.style.pointerEvents = 'none')
       if (i === q.c) {
@@ -111,7 +122,16 @@ function showResults () {
   document.getElementById('quiz-box').style.display = 'none'
   const res = document.getElementById('result-screen')
   res.style.display = 'block'
+
   const won = state.score >= 3
+
+  // PLAY WIN OR FAIL SOUND
+  if (won) {
+    playSfx('win.mp3');
+  } else {
+    playSfx('fail.mp3');
+  }
+
   document.getElementById('outcome-text').innerText = won ? 'VICTORY!' : 'GAME OVER'
   document.getElementById('score-text').innerText = '⭐'.repeat(state.score) + '☆'.repeat(5 - state.score)
   state.streak = won ? state.streak + 1 : 0

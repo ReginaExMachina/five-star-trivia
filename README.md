@@ -96,4 +96,33 @@ Achieve a **5-Star Score** (5 correct answers) in your chosen configuration. Mai
 
 [ 🐞 Found a Bug? Report it here ](https://github.com/ReginaExMachina/five-star-trivia/issues/new?bug_report.md)
 
-*Developed with ❤️  by ReginaExMachina*
+---
+
+## [VI. PRODUCTION CREDITS] 📜
+
+This production was made possible through the following creative contributions:
+
+[ 📽️ ]   **VISUAL DIRECTION & ICONOGRAPHY**
+        All custom pixel icons were made by the developer using **Piskel**.
+
+[ 🔊 ]   **SOUND DESIGN & FOLEY**
+        * **Victory and Fail SFX:** Sourced by [Make_More_Sound](https://pixabay.com/users/make_more_sound-35032787/) via Pixabay.
+        * **UI & Interface SFX:** Sourced from the *Pixel Combat* collection by [Helton Yan](https://heltonyan.itch.io/pixelcombat).
+
+---
+
+## [VII. FINAL REEL] 🎬
+
+      ____________________________________________________
+     |  ________________________________________________  |
+     | |                                                | |
+     | |   THANK YOU FOR PLAYING FIVE STAR TRIVIA!      | |
+     | |                                                | |
+     | |          [ EXIT ]            [ REPLAY ]        | |
+     | |________________________________________________| |
+     |____________________________________________________|
+                | |                          | |
+                |_|                          |_|
+---
+
+*Developed with ❤️ by ReginaExMachina.*

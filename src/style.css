@@ -38,19 +38,21 @@
 
         /* Icon (Dark Theme) */
         .title-icon {
-            content: url('../assets/clapboard.png');
-            width: 80px;
+            content: url('../assets/fivestars.png');
+            width: 350px;
             height: auto;
             margin-bottom: 20px;
             display: block;
             margin-left: auto;
             margin-right: auto;
             image-rendering: pixelated;
+            image-rendering: crisp-edges;
         }
 
         /* Icon (Light Theme Override) */
         body.light-theme .title-icon {
             content: url('../assets/clapboard_lgt.png');
+            width: 80px;
         }
 
         /* --- SIDEBAR --- */
@@ -185,18 +187,6 @@
             50% { opacity: 0; }
         }
 
-        .title-icon {
-            width: 80px;
-            height: auto;
-            margin-bottom: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-    
-            image-rendering: pixelated; 
-            image-rendering: crisp-edges;
-        }
-
         /* --- STAR SCORE DISPLAY --- */
         #star-display {
             text-align: center;
@@ -210,6 +200,10 @@
         body {
             flex-direction: column;
             height: auto;
+        }
+
+        .title-icon {
+            width: 80px;
         }
 
     #side-menu {

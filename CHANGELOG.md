@@ -21,7 +21,7 @@ All notable changes to **Five Star Trivia** will be documented in this file.
 ## [0.0.5] - 2026-04-09
 
 ### Added in 0.0.5
-- Custom icon for both themes.
+- Custom icons for both themes.
 
 ## [0.0.4] - 2026-04-08
 

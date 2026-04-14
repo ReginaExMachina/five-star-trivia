@@ -1,5 +1,3 @@
-/* global toggleDrawer, startGame, toggleTheme */
-
 let questionsDB = []
 
 async function loadQuestions () {
@@ -16,7 +14,7 @@ async function loadQuestions () {
 
 loadQuestions()
 
-const diffs = ['Easy', 'Medium', 'Hard', 'Director Cut']
+const diffs = ['All', 'Easy', 'Medium', 'Hard', 'Director Cut']
 const eras = ['All', 'Silent Era', 'Golden Age', 'New Hollywood', '80s', '90s', 'Modern']
 
 const state = {

@@ -13,7 +13,6 @@ const dataDir = path.join(__dirname, '../data')
 const csvPath = path.join(dataDir, 'questions.csv')
 const outputJsonPath = path.join(dataDir, 'questions.json')
 
-// Ensure data directory exists for transforms
 if (!fs.existsSync(dataDir)) {
   fs.mkdirSync(dataDir)
 }

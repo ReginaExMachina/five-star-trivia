@@ -90,6 +90,10 @@ Achieve a **5-Star Score** (5 correct answers) in your chosen configuration. Mai
 * **Aesthetic:** 8-bit Arcade UI
 * **Requirements:** A love for the movies and a functioning mouse/tap input.
 
+### ⚠️ KNOWN ISSUES (DEVELOPER TOOLS)
+* **Trivia Wrangler:** The `transform to csv` sub-program currently has a known limitation with character encoding. Special characters in foreign language titles (e.g., accents, umlauts) do not transform correctly to CSV.
+  * *Status:* Investigation in progress.
+
 [ 🐞 Found a Bug? Report it here ](https://github.com/ReginaExMachina/five-star-trivia/issues/new?bug_report.md)
 
 *Developed with ❤️  by ReginaExMachina*

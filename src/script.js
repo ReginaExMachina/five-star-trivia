@@ -127,7 +127,7 @@ function showResults () {
 
   // PLAY WIN OR FAIL SOUND
   if (won) {
-    playSfx('win.mp3');
+    //playSfx('win.mp3'); too annoying?
   } else {
     playSfx('fail.mp3');
   }

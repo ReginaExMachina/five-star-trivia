@@ -13,6 +13,11 @@ All notable changes to **Five Star Trivia** will be documented in this file.
 
 ---
 
+## [1.0.1] - 2026-04-21
+
+## Added
+- BETA links to README.
+
 ## [1.0.1] - 2026-04-15
 
 ## Changed

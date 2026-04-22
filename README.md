@@ -16,11 +16,11 @@
     |   [   ]  [   ]  [   ]  [   ]  [   ]  [   ]  [   ]  |
      ----------------------------------------------------
 
-     ****************************************************
-     * 🕹️ -> [ LINKS TO PLAY ] <- 🎮                   *
-     * https://reginaexmachina.github.io/five-star-trivia/
-     * (Secondary Mirror: itch.io Link TBD)             *
-     ****************************************************
+     ************************************************************************************
+     * 🕹️ -> [ LINKS TO PLAY ] <- 🎮                                                   *
+     * https://reginaexmachina.github.io/five-star-trivia/                              *
+     * (Secondary Mirror: https://reginaexmachina.itch.io/five-star-trivia)             *
+     ************************************************************************************
 
 ---
 
@@ -29,6 +29,10 @@
 **[FIVE STAR TRIVIA](https://reginaexmachina.github.io/five-star-trivia/)** is an arcade-inspired challenge for film students and casual moviegoers alike, using 8-bit styling and high-contrast visuals.
 
 Your mission, should you choose to accept it, is simple: Navigate a century of film history, maintain your streak, and embark on **the quest for a perfect 5-star rating** from the elusive "Critic’s Circle".
+
+### ⚠️ BETA
+
+Feedback welcome via [Google forms](https://forms.gle/LLnW9fLwwtR1vLna7).
 
 ---
 
